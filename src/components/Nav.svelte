@@ -4,9 +4,12 @@
 
 <style>
 	nav {
+		display: flex;
+		justify-content: space-between;
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		background: var(--color-second);
 	}
 
 	ul {
@@ -26,17 +29,19 @@
 		float: left;
 	}
 
+	.nyrst:focus, .nyrst:hover,
 	[aria-current] {
 		position: relative;
 		display: inline-block;
 	}
 
+	.nyrst:focus::after, .nyrst:hover::after,
 	[aria-current]::after {
 		position: absolute;
 		content: '';
 		width: calc(100% - 1em);
 		height: 2px;
-		background-color: rgb(255,62,0);
+		background-color: var(--color-main);
 		display: block;
 		bottom: -1px;
 	}
@@ -50,11 +55,15 @@
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">nyrst.tools</a></li>
+		<li><a aria-current="{segment === 'brrr' ? 'page' : undefined}" href="brrr">🔧 brrr</a></li>
+		<li><a aria-current="{segment === 'freezer' ? 'page' : undefined}" href="freezer">❄️ freezer</a></li>
+		<li><a aria-current="{segment === 'apps' ? 'page' : undefined}" href="apps">📝 apps</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<!-- <li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li> -->
 	</ul>
+
+	<a class="nyrst" href="https://github.com/nyrst/">⌨️</a>
 </nav>

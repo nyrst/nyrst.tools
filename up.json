@@ -1,0 +1,13 @@
+{
+  "name": "nyrst",
+  "profile": "nyrst",
+  "lambda": {
+    "runtime": "nodejs12.x"
+  },
+  "regions": ["eu-central-1"],
+  "stages": {
+    "production": {
+      "domain": "nyrst.tools"
+    }
+  }
+}

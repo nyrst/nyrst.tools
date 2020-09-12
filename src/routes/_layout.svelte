@@ -13,6 +13,11 @@
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
+
+	:global(:root) {
+		--color-main: #00b2eb;
+		--color-second: #ddf5ff;
+	}
 </style>
 
 <Nav {segment}/>
