@@ -1,6 +1,3 @@
 *
-!node_modules/**
 !__sapper__/**
-!static/**
-!package.json
-!package-lock.json
+__sapper__/build

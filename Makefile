@@ -11,7 +11,10 @@ intall: ## Install dependencies
 build: ## Build project
 	npm run build
 
-deploy: install build ## Deploy to ehret.me
+build-static: ## Build static project
+	npm run export
+
+deploy: install build-static ## Deploy to nyrst.tools
 	up deploy production
 
 help: ## Print this message

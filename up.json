@@ -4,6 +4,10 @@
   "lambda": {
     "runtime": "nodejs12.x"
   },
+  "type": "static",
+  "static": {
+    "dir": "__sapper__/export"
+  },
   "regions": ["eu-central-1"],
   "stages": {
     "production": {
