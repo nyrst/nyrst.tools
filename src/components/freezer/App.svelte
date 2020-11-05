@@ -17,7 +17,7 @@
 
 	<ul>
 		<li>Latest version: {app.latest_version}</li>
-		<li>Available architectures: {app.arch}</li>
+		<li>Available for: {app.archs}</li>
 		<li><a href="{app.brrr}">Definition file</a></li>
 	</ul>
 </details>
