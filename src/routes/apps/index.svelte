@@ -1,6 +1,6 @@
 <script context="module">
 	export async function preload() {
-		const resApps = await this.fetch("https://raw.githubusercontent.com/nyrst/freezer/main/public/apps.json");
+		const resApps = await this.fetch("https://raw.githubusercontent.com/nyrst/freezer/main/data/apps.json");
 		const data = await resApps.json();
 
 		const apps = data.sort((a, b) => {
