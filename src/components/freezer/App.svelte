@@ -1,5 +1,7 @@
 <script>
 	export let app;
+
+	const copy = name => () => navigator.clipboard.writeText(`brrr i ${name}`).then(() => {}, (err) => {});
 </script>
 
 <style>
@@ -18,6 +20,6 @@
 	<ul>
 		<li>Latest version: {app.latest_version}</li>
 		<li>Available for: {app.archs}</li>
-		<li><a href="{app.brrr}">Definition file</a></li>
+		<li>Install: <code>brrr i {app.name}</code> <button on:click={copy(app.name)}>📋</button></li>
 	</ul>
 </details>
