@@ -56,7 +56,7 @@
 	<title>nyrst.tools</title>
 </svelte:head>
 
-<h1>nyrts.tools</h1>
+<h1>nyrst.tools</h1>
 
 <a href="/brrr">
 	<span class="name">🔧 brrr</span>
