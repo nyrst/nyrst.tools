@@ -98,6 +98,7 @@
 	<button class:enabled={archKey === "all"} on:click={filter()} title="All">All</button>
 	<button class:enabled={archKey === "linux"} on:click={filter("linux")} title="Linux">Linux</button>
 	<button class:enabled={archKey === "macos"} on:click={filter("macos")} title="MacOS">MacOS</button>
+	<button class:enabled={archKey === "macosarm"} on:click={filter("macosarm")} title="MacOS ARM">MacOS ARM</button>
 </nav>
 
 {#each filteredApps as app}
