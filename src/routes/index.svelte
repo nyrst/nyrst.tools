@@ -58,7 +58,7 @@
 
 <h1>nyrst.tools</h1>
 
-<a href="/brrr">
+<a href="https://brrr.nyrst.tools">
 	<span class="name">🔧 brrr</span>
 	<span class="description">Yet another package manager</span>
 </a>
