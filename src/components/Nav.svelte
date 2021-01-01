@@ -57,8 +57,7 @@
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href="https://nyrst.tools">nyrst.tools</a></li>
 		<li><a href="https://brrr.nyrst.tools">🔧 brrr</a></li>
-		<li><a aria-current="{segment === 'freezer' ? 'page' : undefined}" href="freezer">❄️ freezer</a></li>
-		<li><a aria-current="{segment === 'apps' ? 'page' : undefined}" href="apps">📝 apps</a></li>
+		<li><a aria-current="{segment === 'freezer' ? 'page' : undefined}" href="/freezer">❄️ freezer</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
