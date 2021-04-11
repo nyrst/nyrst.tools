@@ -8,7 +8,7 @@
 		text-shadow: 5px 5px var(--color-second);
 	}
 
-	a {
+	a.nyrst-link {
 		display: block;
 		margin: 1rem 0;
 		padding: 1rem;
@@ -58,13 +58,22 @@
 
 <h1>nyrst.tools</h1>
 
-<a href="https://brrr.nyrst.tools">
+<p><code>brrr</code> is now deprecated and you are invited to use <a href="https://asdf-vm.com/">asdf-vm</a> instead. Read the <a href="https://ehret.me/en/brrr-the-end.html">announcement</a>. All files and binaries remain available.</p>
+
+<a class="nyrst-link" href="https://brrr.nyrst.tools">
 	<span class="name">🔧 brrr</span>
 	<span class="description">Yet another package manager</span>
 </a>
-<a href="/freezer">
+<a class="nyrst-link" href="/freezer">
 	<span class="name">❄️ freezer</span>
 	<span class="description">Package definitions for brrr</span>
+</a>
+
+<p>Some packages are not in the official <a href="https://github.com/asdf-vm/asdf-plugins">asdf plugins list</a> are available in the Nyrst organization:</p>
+
+<a class="nyrst-link" href="https://github.com/nyrst?q=asdf-&type=&language=&sort=">
+	<span class="name">🔧 asdf plugins</span>
+	<span class="description">Various plugins for the asdf package manager</span>
 </a>
 
 <figure>

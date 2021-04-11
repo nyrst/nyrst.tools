@@ -92,7 +92,20 @@
 	}
 </style>
 
-<h1>Available apps in the freezer repository</h1>
+<h1>brrr and freezer are deprecated</h1>
+
+<p><code>brrr</code> is now deprecated and you are invited to use <a href="https://asdf-vm.com/">asdf-vm</a> instead. Read the <a href="https://ehret.me/en/brrr-the-end.html">announcement</a>.</p>
+
+<p>You can find your favorite tools at:</p>
+
+<ul>
+	<li><a href="https://github.com/asdf-vm/asdf-plugins">The official asdf plugins</a></li>
+	<li><a href="https://github.com/nyrst?q=asdf-&type=&language=&sort=">The Nysrt organization</a></li>
+</ul>
+
+<p>Note: all files and binaries remain available.</p>
+
+<h2>Apps in the freezer repository</h2>
 
 <nav>
 	<button class:enabled={archKey === "all"} on:click={filter()} title="All">All</button>
