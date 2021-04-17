@@ -1,17 +1,17 @@
 {
-  "name": "nyrst",
-  "profile": "nyrst",
-  "lambda": {
-    "runtime": "nodejs12.x"
-  },
-  "type": "static",
-  "static": {
-    "dir": "__sapper__/export"
-  },
-  "regions": ["eu-central-1"],
-  "stages": {
-    "production": {
-      "domain": "nyrst.tools"
-    }
-  }
+	"name": "nyrst",
+	"profile": "nyrst",
+	"lambda": {
+		"runtime": "nodejs14.x"
+	},
+	"type": "static",
+	"static": {
+		"dir": "build"
+	},
+	"regions": ["eu-central-1"],
+	"stages": {
+		"production": {
+			"domain": "nyrst.tools"
+		}
+	}
 }

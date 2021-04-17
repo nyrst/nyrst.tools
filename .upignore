@@ -1,4 +1,2 @@
 *
-!__sapper__/**
-__sapper__/build
-__sapper__/dev
+!build/**

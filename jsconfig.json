@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./nyrst-dot-tools",
+		"paths": {
+			"$lib/*": ["src/lib/*"]
+		}
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+}

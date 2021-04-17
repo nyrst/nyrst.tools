@@ -1,0 +1,156 @@
+:root {
+	--main-width: 80vw;
+
+	/*  typo vars */
+	--code-fs: 1.3rem;
+	--h6: 1.4rem;
+	--h5: 1.6rem;
+	--h4: 1.8rem; /* default font-size */
+	--h3: 2.6rem;
+	--h2: 3rem;
+	--h1: 3.2rem;
+	--linemax: 42rem; /* max line-length */
+	--lh: 1.5; /* base line-height */
+
+	/*  theme vars */
+	--back: #fff;
+	--heading: var(--second);
+	--prime: #00b2eb;
+	--second: #ddf5ff;
+	--text: #333;
+}
+
+@media screen and (min-width: 80rem) {
+	:root {
+		--main-width: 80rem;
+	}
+}
+
+body {
+	--font: 'Jostvf', sans;
+	--font-mono: monospace;
+	margin: 0;
+	padding: 0;
+	overflow-wrap: break-word;
+}
+
+html {
+	font-size: 0.8rem;
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'Jostvf';
+	src: url('/fonts/Jost-VF.ttf') format('truetype');
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	font: 300 clamp(var(--h6), 2vw, var(--h4)) / var(--lh) var(--font);
+	background-color: var(--back);
+	color: var(--text);
+	font-feature-settings: 'kern', 'liga';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+	position: relative;
+	font-weight: normal;
+}
+
+/* h1, h2, h3, h4, h5, h6 { font-weight: 600 } */
+h6 {
+	font-size: var(--h6);
+}
+h5 {
+	font-size: var(--h5);
+}
+h4 {
+	font-size: var(--h4);
+}
+h3 {
+	font-size: var(--h3);
+}
+h2 {
+	font-size: var(--h2);
+}
+h1 {
+	font-size: var(--h1);
+}
+
+h1,
+h2 {
+	font-family: var(--font);
+	line-height: 1.25;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+.b,
+b,
+strong {
+	font-weight: 600;
+}
+
+tt,
+code,
+kbd,
+samp {
+	font: 400 var(--code-fs) / 1.7 var(--font-mono);
+}
+
+code {
+	position: relative;
+	white-space: nowrap;
+	background: var(--prime);
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #333;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 0.3rem;
+}
+
+pre code {
+	top: 0;
+	white-space: inherit;
+	background-color: none;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 1.5rem;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--back: #333;
+		--heading: var(--second);
+		--prime: #ddf5ff;
+		--second: #00b2eb;
+		--text: #fff;
+	}
+}
