@@ -1,6 +1,9 @@
-/node_modules/
-.svelte/
-build/
+.DS_Store
+node_modules
+/.svelte-kit
+/build
+/functions
+.vercel_build_output
 
 .idea/
 *.iml
